@@ -22,7 +22,10 @@ const Footer = () => {
     [isMobile]
   );
 
-  const copyrightHolder = useMemo(() => <Link href="https://TODO-domain-name.com">TODO: Add company name</Link>, []);
+  const copyrightHolder = useMemo(
+    () => <Link href="https://TODO-caps-lock-indicator.com">TODO: Add company name</Link>,
+    []
+  );
 
   return (
     <footer className={className} id="footer">

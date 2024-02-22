@@ -11,7 +11,8 @@ const TermsAndConditionsPage = () => {
       <Typo variant="header1">Terms and Conditions</Typo>
 
       <Typo variant="paragraph">
-        Welcome to the <strong>TODO: DOMAIN-NAME.COM</strong> website (&quot;Site&quot;). This Site is a property of{' '}
+        Welcome to the <strong>TODO: caps-lock-indicator.com</strong> website (&quot;Site&quot;). This Site is a
+        property of{' '}
         <strong>
           <Link href="https://TODO-other-domain.com">TODO: COMPANY OR OWNER</Link>
         </strong>{' '}
