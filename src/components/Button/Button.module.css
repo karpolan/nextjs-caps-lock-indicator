@@ -1,0 +1,94 @@
+.button {
+  cursor: pointer;
+  border-radius: 999rem;
+  padding: 1.5rem 2.5rem;
+
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+
+  display: inline-flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s;
+
+  text-transform: capitalize;
+}
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.button:hover {
+  text-decoration: none;
+}
+
+/* "Spinning Icon" animation */
+.spinner {
+  animation: spin infinite 5s linear;
+  /* You can increase or decrease the timer (5s) to 
+   increase or decrease the speed of the spinner */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Variant "contained"  */
+.contained {
+  border: solid 0.125rem color-mix(in srgb, var(--color-primary) 10%, var(--color-background));
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  text-decoration: none;
+}
+.contained:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 80%, var(--color-background));
+}
+.contained:disabled {
+  background-color: var(--color-primary);
+}
+
+/* Variant "outlined" */
+.outlined {
+  border: solid 0.125rem var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.outlined:disabled,
+.outlined:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 20%, var(--color-background));
+}
+
+/* Variant "text" */
+.text {
+  border: none;
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: 0.125rem 0.5rem;
+}
+.text:disabled {
+  background-color: color-mix(in srgb, var(--color-primary) 10%, var(--color-background));
+}
+.text:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 10%, var(--color-background));
+  /* text-decoration: underline; */
+}
+
+/* Variant "icon" */
+.icon {
+  border: none;
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: 0.25rem;
+}
+.icon:disabled,
+.icon:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 10%, var(--color-background));
+}
